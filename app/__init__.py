@@ -1,0 +1,1 @@
+"""Micromax catalog RAG assistant."""

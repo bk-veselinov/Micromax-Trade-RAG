@@ -1,0 +1,27 @@
+# Phase 0 (minimal) / Phase 7 (final)
+# TODO: service `chroma`: image chromadb/chroma, named volume for persistence
+# TODO: service `api`: build ., port 8080, env_file .env, depends_on chroma,
+#       CHROMA_HOST=chroma inside the compose network
+# TODO: one-off ingest: `docker compose run --rm api python -m app.ingestion.ingest`
+# TODO: volumes: chroma_data
+services:
+  chroma:
+    image: chromadb/chroma:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/data
+
+  api:
+    build: .
+    env_file: .env
+    environment:
+      CHROMA_HOST: chroma
+      CHROMA_PORT: "8000"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - chroma
+
+volumes:
+  chroma_data:
