@@ -2,11 +2,20 @@
 
 Phase 0. Model names live here only, never hard-coded elsewhere.
 """
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
-# TODO(phase-0): class Settings(BaseSettings)
-#   - Gemini auth: GOOGLE_API_KEY  or  GOOGLE_CLOUD_PROJECT + GOOGLE_GENAI_USE_VERTEXAI
-#   - LLM_MODEL, EMBED_MODEL
-#   - CHROMA_HOST, CHROMA_PORT, collection name
-#   - WP_BASE_URL, WC_KEY, WC_SECRET
-#   - retrieval knobs: top_k, distance threshold, retrieval mode (vector | bm25 | hybrid)
-# TODO(phase-0): a single cached `get_settings()` accessor
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+
+    llm_model: str
+    embed_model: str
+
+    chroma_host: str = "localhost"
+    chroma_port: int = 8000
+
+    wc_key: str | None = None
+    wc_secret: str | None = None
+
+
+settings = Settings()
