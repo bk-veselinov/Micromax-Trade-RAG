@@ -1,0 +1,4 @@
+# Phase 7
+# TODO: on push + pull_request
+# TODO: job: checkout, setup uv, `uv sync`, `uv run ruff check .`, `uv run pytest`, `docker build .`
+# TODO: separate workflow_dispatch job for the eval (uses Gemini quota)
