@@ -1,6 +1,22 @@
-# Phase 0 (minimal) / Phase 7 (final)
-# TODO: FROM python:3.12-slim
-# TODO: copy uv from ghcr.io/astral-sh/uv
-# TODO: copy pyproject.toml + uv.lock, then `uv sync --frozen --no-dev`
-# TODO: copy app/ and data/
-# TODO: non-root user, EXPOSE 8080, run uvicorn app.api.main:app
+FROM python:3.12-slim
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+WORKDIR /app
+ENV UV_COMPILE_BYTECODE=1 \
+    UV_LINK_MODE=copy \
+    PATH="/app/.venv/bin:$PATH"
+
+COPY pyproject.toml uv.lock ./
+RUN uv sync --frozen --no-dev --no-install-project
+
+COPY README.md ./
+COPY app ./app
+COPY data ./data
+RUN uv sync --frozen --no-dev
+
+RUN useradd --create-home appuser && chown -R appuser /app
+USER appuser
+
+EXPOSE 8080
+CMD ["uvicorn", "app.api.main:app", "--host", "0.0.0.0", "--port", "8080"]
