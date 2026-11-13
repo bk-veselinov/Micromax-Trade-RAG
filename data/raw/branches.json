@@ -1,0 +1,472 @@
+[
+  {
+    "id": 14708,
+    "date": "2026-10-13T17:00:56",
+    "date_gmt": "2026-10-13T14:00:56",
+    "guid": {
+      "rendered": "https://shop.micromaxtrade.com/?post_type=branch&#038;p=14708"
+    },
+    "modified": "2026-10-20T20:02:04",
+    "modified_gmt": "2026-10-20T17:02:04",
+    "slug": "ruse",
+    "status": "publish",
+    "type": "branch",
+    "link": "https://shop.micromaxtrade.com/kontakti/ruse/",
+    "title": {
+      "rendered": "Микромакс Трейд – Русе (Централен офис)"
+    },
+    "featured_media": 14906,
+    "menu_order": 1,
+    "template": "",
+    "class_list": [
+      "post-14708",
+      "branch",
+      "type-branch",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": {
+      "address_street": "ул. Давид 16",
+      "address_city": "Русе",
+      "address_postcode": "7012",
+      "map-coordinates": "43.83969014034797, 25.954560080002178",
+      "tel": "+359 82 823 704 ",
+      "tel_person": "+359 82 820 761",
+      "name_person_tel": "Косю Атанасов",
+      "email": "ruse@micromaxtrade.com",
+      "teams_email": "",
+      "gbp_url": "",
+      "description": "Клонът на „Микромакс Трейд“ в Русе обслужва производствени предприятия, ремонтни бази и отдели по поддръжка в Русе и Северна България. Тук можете да заявите индустриални уплътнения, О-пръстени, гумено-технически изделия, хидравлични и пневматични компоненти, лепила и уплътнители LOCTITE, резервни части за помпи и консумативи за производството.\r\n\r\nКлонът е удобен за предприятията от Западна и Източна промишлена зона на Русе, Индустриален парк Русе и Свободна зона Русе, както и за пристанищните терминали, корабостроителните бази и машиностроителните заводи в региона. Обслужваме клиенти от Бяла, Две могили, Ветово, Сливо поле, Иваново, Цар Калоян, Разград, Тутракан и Силистра, както и от селата в общините Русе, Иваново и Сливо поле – Николово, Мартен, Басарбово, Ново село и Пиргово.\r\n\r\nВ русенския клон приемаме поръчки за всички наши услуги:\r\nизработка и ремонт на механични челни уплътнения; изработка на хидравлични и пневматични уплътнители и гарнитури по поръчка; ремонт на хидравлични и пневматични цилиндри; ремонт на водни помпи и ротационни глави; стругарски услуги по чертеж; екструдиране на каучукови профили и изработка на пресови каучукови изделия от силикон, маслоустойчива и киселиноустойчива гума.\r\n\r\nАко не намирате нужния артикул в каталога, обадете се или изпратете запитване – ще проверим наличността и срока за доставка и ще ви изпратим оферта.",
+      "shop_img": 14906
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14708",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/types/branch"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14708/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 14907,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14708/revisions/14907"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media/14906"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media?parent=14708"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14704,
+    "date": "2026-10-13T16:52:49",
+    "date_gmt": "2026-10-13T13:52:49",
+    "guid": {
+      "rendered": "https://shop.micromaxtrade.com/?post_type=branch&#038;p=14704"
+    },
+    "modified": "2026-10-20T20:02:14",
+    "modified_gmt": "2026-10-20T17:02:14",
+    "slug": "varna",
+    "status": "publish",
+    "type": "branch",
+    "link": "https://shop.micromaxtrade.com/kontakti/varna/",
+    "title": {
+      "rendered": "Микромакс Трейд – Варна"
+    },
+    "featured_media": 14706,
+    "menu_order": 2,
+    "template": "",
+    "class_list": [
+      "post-14704",
+      "branch",
+      "type-branch",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": {
+      "address_street": "бул. Република 19",
+      "address_city": "Варна",
+      "address_postcode": "9009",
+      "map-coordinates": "43.21434529084983, 27.878586325243234",
+      "tel": "+359 52 611 109",
+      "tel_person": "+359 88 435 1791",
+      "name_person_tel": "Живка Костова",
+      "email": "varna@micromaxtrade.com",
+      "teams_email": "",
+      "gbp_url": "",
+      "description": "Клонът на „Микромакс Трейд“ във Варна обслужва производствени предприятия, ремонтни бази и отдели по поддръжка във Варна и Североизточна България. Тук можете да заявите индустриални уплътнения, О-пръстени, гумено-технически изделия, хидравлични и пневматични компоненти, лепила и уплътнители LOCTITE, резервни части за помпи и консумативи за производството.\r\n\r\nКлонът е удобен за предприятията от Западна промишлена зона на Варна, химическия и индустриален комплекс Девня – Белослав, пристанищните терминали, корабостроителните и кораборемонтните бази, както и за хранително-вкусовата промишленост в региона. Обслужваме клиенти от Девня, Белослав, Аксаково, Провадия, Суворово, Вълчи дол, Долни чифлик, Добрич, Балчик и Каварна, както и от селата в общините Варна, Аксаково и Белослав – Тополи, Константиново, Каменар, Игнатиево и Езерово.\r\n\r\nВъв варненския клон приемаме поръчки за всички наши услуги:\r\nизработка и ремонт на механични челни уплътнения; изработка на хидравлични и пневматични уплътнители и гарнитури по поръчка; ремонт на хидравлични и пневматични цилиндри; ремонт на водни помпи и ротационни глави; стругарски услуги по чертеж; екструдиране на каучукови профили и изработка на пресови каучукови изделия от силикон, маслоустойчива и киселиноустойчива гума.\r\n\r\nАко не намирате нужния артикул в каталога, обадете се или изпратете запитване – ще проверим наличността и срока за доставка и ще ви изпратим оферта.",
+      "shop_img": 14706
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14704",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/types/branch"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14704/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 14721,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14704/revisions/14721"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media/14706"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media?parent=14704"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14637,
+    "date": "2026-10-12T16:39:40",
+    "date_gmt": "2026-10-12T13:39:40",
+    "guid": {
+      "rendered": "https://shop.micromaxtrade.com/?post_type=branch&#038;p=14637"
+    },
+    "modified": "2026-10-20T20:02:22",
+    "modified_gmt": "2026-10-20T17:02:22",
+    "slug": "plovdiv",
+    "status": "publish",
+    "type": "branch",
+    "link": "https://shop.micromaxtrade.com/kontakti/plovdiv/",
+    "title": {
+      "rendered": "Микромакс Трейд – Пловдив"
+    },
+    "featured_media": 14638,
+    "menu_order": 3,
+    "template": "",
+    "class_list": [
+      "post-14637",
+      "branch",
+      "type-branch",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": {
+      "address_street": "бул. Северен №47, вх.Б, обект БМ1",
+      "address_city": "Пловдив",
+      "address_postcode": "4000",
+      "map-coordinates": "42.166264142536136, 24.753382627113325",
+      "tel": "+359 32 966 812",
+      "tel_person": "+359 88 741 7597",
+      "name_person_tel": "Йонко Чоплишки",
+      "email": "plovdiv@micromaxtrade.com",
+      "teams_email": "",
+      "gbp_url": "",
+      "description": "Клонът на „Микромакс Трейд“ в Пловдив обслужва производствени предприятия, ремонтни бази и отдели по поддръжка в Пловдив и Южна България. Тук можете да заявите индустриални уплътнения, О-пръстени, гумено-технически изделия, хидравлични и пневматични компоненти, лепила и уплътнители LOCTITE, резервни части за помпи и консумативи за производството.\r\n\r\nКлонът е удобен за предприятията от Тракия икономическа зона – индустриалните зони „Марица“, „Раковски“ и „Куклен“, както и за по-малките индустриални паркове около околовръстния път на Пловдив. Обслужваме клиенти от Асеновград, Пазарджик, Карлово, Стамболийски, Първомай, Садово, Съединение, Перущица и Кричим, както и от селата в общините Марица и Родопи – Труд, Царацово, Марково, Брестник и Кадиево.\r\n\r\nВ пловдивския клон приемаме поръчки за всички наши услуги:\r\nизработка и ремонт на механични челни уплътнения; изработка на хидравлични и пневматични уплътнители и гарнитури по поръчка; ремонт на хидравлични и пневматични цилиндри; ремонт на водни помпи и ротационни глави; стругарски услуги по чертеж; екструдиране на каучукови профили и изработка на пресови каучукови изделия от силикон, маслоустойчива и киселиноустойчива гума.\r\n\r\nАко не намирате нужния артикул в каталога, обадете се или изпратете запитване – ще проверим наличността и срока за доставка и ще ви изпратим оферта.",
+      "shop_img": 14638
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14637",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/types/branch"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14637/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 14723,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14637/revisions/14723"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media/14638"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media?parent=14637"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14715,
+    "date": "2026-10-13T20:35:28",
+    "date_gmt": "2026-10-13T17:35:28",
+    "guid": {
+      "rendered": "https://shop.micromaxtrade.com/?post_type=branch&#038;p=14715"
+    },
+    "modified": "2026-10-26T13:23:33",
+    "modified_gmt": "2026-10-26T11:23:33",
+    "slug": "sofia",
+    "status": "publish",
+    "type": "branch",
+    "link": "https://shop.micromaxtrade.com/kontakti/sofia/",
+    "title": {
+      "rendered": "Микромакс Трейд – София"
+    },
+    "featured_media": 14904,
+    "menu_order": 4,
+    "template": "",
+    "class_list": [
+      "post-14715",
+      "branch",
+      "type-branch",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": {
+      "address_street": " ж.к. Христо Смирненски, бл.70",
+      "address_city": "София",
+      "address_postcode": "1574",
+      "map-coordinates": "42.67960468088264, 23.377837182964413",
+      "tel": "+359 2 946 0234",
+      "tel_person": "+359 88 822 0138",
+      "name_person_tel": "Галин Иванов",
+      "email": "sofia@micromaxtrade.com",
+      "teams_email": "",
+      "gbp_url": "https://maps.app.goo.gl/puwmArQnhPNp4BQD6",
+      "description": "Нашият клон е стратегически разположен за бързо и удобно обслужване на производствени предприятия, индустриални бази, сервизи и логистични компании.\r\nОбслужваме клиенти във всички промишлени зони на София, както и предприятия и бизнеси от Югозападна и Северозападна България. Покриваме широк регион, включващ Перник, Костинброд, Божурище, Елин Пелин, Ботевград, Своге, Самоков, Ихтиман и Правец, както и населените места около София.\r\n\r\nПредлагаме професионални решения за индустрията – механични челни уплътнения, О-пръстени, хидравлични и пневматични уплътнения, технически пластмаси, гумени и уплътнители листови материали, както и специализирани продукти и консумативи за производството и поддръжката на промишлено оборудване.\r\nМикромакс Трейд – професионални решения, надеждни продукти и обслужване за индустрията в София и Западна България!\r\n",
+      "shop_img": 14904
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14715",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/types/branch"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14715/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 14967,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14715/revisions/14967"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media/14904"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media?parent=14715"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14710,
+    "date": "2026-10-13T17:05:43",
+    "date_gmt": "2026-10-13T14:05:43",
+    "guid": {
+      "rendered": "https://shop.micromaxtrade.com/?post_type=branch&#038;p=14710"
+    },
+    "modified": "2026-10-20T20:01:55",
+    "modified_gmt": "2026-10-20T17:01:55",
+    "slug": "yambol",
+    "status": "publish",
+    "type": "branch",
+    "link": "https://shop.micromaxtrade.com/kontakti/yambol/",
+    "title": {
+      "rendered": "Микромакс Трейд – Ямбол"
+    },
+    "featured_media": 14911,
+    "menu_order": 6,
+    "template": "",
+    "class_list": [
+      "post-14710",
+      "branch",
+      "type-branch",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": {
+      "address_street": " ул. \"Крали Марко\" 82",
+      "address_city": "Ямбол",
+      "address_postcode": "8600",
+      "map-coordinates": "42.47919461378405, 26.515189581106494",
+      "tel": "+359 46 665 746",
+      "tel_person": "+359 88 510 1004",
+      "name_person_tel": "Тодор Андонов",
+      "email": "yambol@micromaxtrade.com",
+      "teams_email": "",
+      "gbp_url": "",
+      "description": "Клонът на „Микромакс Трейд“ в Ямбол обслужва производствени предприятия, ремонтни бази и отдели по поддръжка в Ямбол и Югоизточна България. Тук можете да заявите индустриални уплътнения, О-пръстени, гумено-технически изделия, хидравлични и пневматични компоненти, лепила и уплътнители LOCTITE, резервни части за помпи и консумативи за производството.\r\n\r\nКлонът е удобен за предприятията от промишлените зони на Ямбол, машиностроителните и металообработващите заводи, хранително-вкусовата промишленост, както и за земеделските стопанства и сервизите за селскостопанска техника в региона. Обслужваме клиенти от Сливен, Елхово, Стралджа, Болярово, Нова Загора и Карнобат, както и от селата в община Тунджа – Кабиле, Тенево, Веселиново, Безмер и Ботево.\r\n\r\nВ ямболския клон приемаме поръчки за всички наши услуги:\r\nизработка и ремонт на механични челни уплътнения; изработка на хидравлични и пневматични уплътнители и гарнитури по поръчка; ремонт на хидравлични и пневматични цилиндри; ремонт на водни помпи и ротационни глави; стругарски услуги по чертеж; екструдиране на каучукови профили и изработка на пресови каучукови изделия от силикон, маслоустойчива и киселиноустойчива гума.\r\n\r\nАко не намирате нужния артикул в каталога, обадете се или изпратете запитване – ще проверим наличността и срока за доставка и ще ви изпратим оферта.",
+      "shop_img": 14911
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14710",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/types/branch"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 6,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14710/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 14912,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/branch/14710/revisions/14912"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media/14911"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://shop.micromaxtrade.com/wp-json/wp/v2/media?parent=14710"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
