@@ -16,6 +16,8 @@ class Settings(BaseSettings):
 
     wc_key: str | None = None
     wc_secret: str | None = None
-
+    wp_base_url: str
+    services_rest_base: str | None = None
+    branch_rest_base: str | None = None
 
 settings = Settings()
