@@ -4,16 +4,15 @@ Phase 2.
 """
 import re
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
-def inline(element: str | None) -> str:
-    """Convert HTML to inline text, or return empty string if None."""
+def inline(element: Tag | str | None) -> str:
+    """Convert an HTML element (or HTML string) to single-line text; '' if None."""
     if element is None:
         return ""
-   
-    soup = BeautifulSoup(element, "html.parser")
-   
-    return soup.get_text(separator=" ", strip=True)
+    if isinstance(element, str):
+        element = BeautifulSoup(element, "html.parser")
+    return element.get_text(separator=" ", strip=True)
 
 def html_to_text(html: str | None) -> str:
     """Convert HTML to text, or return empty string if None."""
@@ -76,7 +75,8 @@ def variation_summary(variations: list[dict], max_values: int = 40) -> str:
 
     lines: list[str] = []
 
-    for name, values in attr_values.items():
+    for name, value_set in attr_values.items():
+        values = sorted(value_set)
         line = f"{name}: {', '.join(values[:max_values])}"
         if len(values) > max_values:
             line += f" ... {len(values) - max_values} още"
