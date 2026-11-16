@@ -9,6 +9,7 @@ from app.ingestion.clean import html_to_text, variation_summary
 
 KNOWLEDGE = Path("data/knowledge/micromax-catalog-rag.md")
 CATALOG = Path("data/raw/catalog.json")
+BRANCHES = Path("data/raw/branches.json")
 CATEGORY_URL = "https://shop.micromaxtrade.com/produkt-kategoriya/{slug}/"
 MAX_CHARS = 4000
 
@@ -186,6 +187,45 @@ def chunk_service(service: dict) -> Chunk:
         }),
     )
 
+def chunk_branch(branch: dict) -> Chunk:
+    """Turn a branch (physical shop) record into a chunk."""
+    branch_id = str(branch["id"])
+    acf = {k: v.strip() if isinstance(v, str) else v for k, v in (branch.get("acf") or {}).items()}
+    title = html_to_text((branch.get("title") or {}).get("rendered")) or acf.get("address_city", "")
+    city = acf.get("address_city")
+    link = branch.get("link")
+
+    address = ", ".join(p for p in [
+        acf.get("address_street"),
+        " ".join(p for p in [acf.get("address_postcode"), f"гр. {city}" if city else ""] if p),
+    ] if p)
+    person, person_tel = acf.get("name_person_tel"), acf.get("tel_person")
+    contact = " – ".join(p for p in [person, person_tel] if p)
+    description = re.sub(r"\n{3,}", "\n\n", (acf.get("description") or "").replace("\r\n", "\n")).strip()
+
+    lines = [
+        title,
+        f"Адрес: {address}" if address else "",
+        f"Телефон: {acf['tel']}" if acf.get("tel") else "",
+        f"Лице за контакт: {contact}" if contact else "",
+        f"Имейл: {acf['email']}" if acf.get("email") else "",
+        f"Google Maps: {acf['gbp_url']}" if acf.get("gbp_url") else "",
+        description,
+        f"Линк: {link}" if link else "",
+    ]
+    return Chunk(
+        id=f"branch:{branch_id}",
+        text=_join(lines),
+        metadata=clean_meta({
+            "type": "branch",
+            "title": title,
+            "city": city,
+            "email": acf.get("email"),
+            "phone": acf.get("tel"),
+            "permalink": link,
+        }),
+    )
+
 def _hard_split(text: str, limit: int) -> list[str]:
     """Split text longer than limit on whitespace (mid-word only as a last resort)."""
     parts = []
@@ -238,7 +278,7 @@ def split_chunk(chunk: Chunk, max_chars: int = MAX_CHARS) -> list[Chunk]:
     ]
 
 def all_chunks() -> list[Chunk]:
-    """Return all chunks from knowledge and catalog."""
+    """Return all chunks from knowledge, catalog and branches."""
     chunks: list[Chunk] = []
     if KNOWLEDGE.exists():
         chunks.extend(chunk_knowledge(KNOWLEDGE.read_text(encoding="utf-8")))
@@ -250,6 +290,10 @@ def all_chunks() -> list[Chunk]:
         chunks.extend(chunk_product(p) for p in catalog.get("products", []))
         chunks.extend(chunk_category(c, names_by_id) for c in categories)
         chunks.extend(chunk_service(s) for s in catalog.get("services", []))
+
+    if BRANCHES.exists():
+        branches = json.loads(BRANCHES.read_text(encoding="utf-8"))
+        chunks.extend(chunk_branch(b) for b in branches)
 
     result: list[Chunk] = []
     for chunk in chunks:

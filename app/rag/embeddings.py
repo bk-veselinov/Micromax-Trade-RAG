@@ -29,7 +29,7 @@ def embed(texts: list[str], task: str) -> list[list[float]]:
             try:
                 response = client().models.embed_content(
                     model=settings.embed_model,
-                    contents=list(batch),
+                    contents=[types.Content(parts=[types.Part(text=t)]) for t in batch],
                     config=types.EmbedContentConfig(
                         task_type=task,
                         output_dimensionality=settings.embed_dim,
@@ -42,6 +42,10 @@ def embed(texts: list[str], task: str) -> list[list[float]]:
                 wait = 2 ** attempt * 5
                 log.warning("Rate limited, retrying in %ss", wait)
                 time.sleep(wait)
+        if len(response.embeddings) != len(batch):
+            raise RuntimeError(
+                f"Batch {i}: sent {len(batch)} texts, got {len(response.embeddings)} embeddings"
+            )
         vectors.extend(emb.values for emb in response.embeddings)
         log.info("Embedded batch %d (%d texts)", i, len(batch))
     return vectors
