@@ -4,8 +4,7 @@ Phase 0. Model names live here only, never hard-coded elsewhere.
 """
 from typing import Literal
 
-from dataclasses import Field
-
+from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
