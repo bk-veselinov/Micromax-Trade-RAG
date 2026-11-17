@@ -2,15 +2,19 @@
 """
 
 import re
-from urllib import response
-from urllib import response
 
 from google.genai import types
 
 from app.config import settings
 from app.rag.embeddings import client
-from app.rag.prompts import NOT_FOUND, PRICE_FALLBACK, SYSTEM_PROMPT, format_context, user_prompt
-from app.rag.retriever import Hit, Retriever, code_tokens
+from app.rag.prompts import (
+    NOT_FOUND,
+    PRICE_FALLBACK,
+    SYSTEM_PROMPT,
+    format_context,
+    user_prompt,
+)
+from app.rag.retriever import Hit, Retriever
 
 PRICE = re.compile(r"\d[\d\s.,]*\s?(?:€|eur\b|евро|лв\.?|лева|bgn)", re.IGNORECASE)
 CITATION = re.compile(r"\[(\d+)\]")

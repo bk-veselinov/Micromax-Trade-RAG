@@ -3,7 +3,9 @@
 Phase 0 (/health), Phase 4 (the rest), Phase 5 (/chat).
 """
 from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
