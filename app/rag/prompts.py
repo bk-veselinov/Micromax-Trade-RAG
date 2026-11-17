@@ -44,7 +44,7 @@ def format_context(hits) -> str:
         meta = h.metadata
         head = f"[{i}] ({SOURCE_LABEL.get(meta['type'], meta['type'])}) {meta.get('title', '')}"
         if meta.get("permalink"):
-            head += f"\nЛинк: {meta['url']}"
+            head += f"\nЛинк: {meta['permalink']}"
         blocks.append(f"{head}\n{h.text}")
     return "\n\n---\n\n".join(blocks)
 
