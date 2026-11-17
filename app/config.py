@@ -2,6 +2,9 @@
 
 Phase 0. Model names live here only, never hard-coded elsewhere.
 """
+from typing import Literal
+
+from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -23,5 +26,11 @@ class Settings(BaseSettings):
     wp_base_url: str
     services_rest_base: str | None = None
     branch_rest_base: str | None = None
+
+    top_k: int = Field(5, ge=1, le=20)           
+    candidate_k: int = Field(20, ge=5, le=100)       
+    rrf_k: int = 60
+    distance_threshold: float = Field(0.6, ge=0.0, le=2.0)   
+    retrieval_mode: Literal["vector", "bm25", "hybrid"] = "hybrid"
 
 settings = Settings()

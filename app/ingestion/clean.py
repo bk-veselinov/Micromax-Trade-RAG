@@ -6,6 +6,7 @@ import re
 
 from bs4 import BeautifulSoup, Tag
 
+
 def inline(element: Tag | str | None) -> str:
     """Convert an HTML element (or HTML string) to single-line text; '' if None."""
     if element is None:

@@ -12,6 +12,7 @@ from app.config import settings
 from app.ingestion.chunking import all_chunks
 from app.rag.embeddings import embed
 
+
 def main() -> None:
     """Ingest catalog and knowledge into Chroma."""
 
